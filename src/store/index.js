@@ -1,4 +1,4 @@
-import { confugureStore } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 import {
   carsReducer,
   addCar,
@@ -7,7 +7,7 @@ import {
 } from "./slices/carsSlice";
 import { formReducer, changeName, changeCost } from "./slices/formSlice";
 
-const store = confugureStore({
+const store = configureStore({
   reducer: {
     cars: carsReducer,
     form: formReducer,
